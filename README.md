@@ -9,3 +9,9 @@
     ```bash
     . up test
     ```
+
+    ![alt text](images/markdown-image.png)  
+
+    <br>
+
+-
