@@ -1,6 +1,6 @@
 # 깃 & 깃허브  
 
-## $$\color{purple}\fbox{\Huge git 명령어}$$  
+## $$\color{purple}\fbox{\Huge git \color{pink}{명령어}}$$  
 - 현재 환경에 설정된 유저와 이메일 조회하기  
   - 유저 확인하기  
     &darr; `\` &darr; `bash shell`
@@ -103,7 +103,7 @@ Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명
 
 <br>  
 
-## $$\color{purple}\fbox{\Huge up}$$  
+## $$\color{purple}\fbox{\Huge \color{pink}{up}}$$  
 - github 로 푸쉬 하기위한 파일.  
   - 사용방법  
     - 터미널에서 . up [커밋 메세지]
