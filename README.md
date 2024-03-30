@@ -1,5 +1,108 @@
 # 깃 & 깃허브  
 
+## git 명령어  
+- 현재 환경에 설정된 유저와 이메일 조회하기  
+  - 유저 확인하기  
+    &darr; `\` &darr; `bash shell`
+    ```bash
+      git config --global user.name
+    ```
+
+  - 유저 변경하기  
+    - git config --global user.name [변경할이름]  
+
+    &darr; `\` &darr; `bash shell`
+    ```bash
+      git config --global user.name change
+    ```
+
+    ![alt text](images/markdown-image-1.png)  
+
+  - 이메일 확인하기  
+    &darr; `\` &darr; `bash shell`
+    ```bash
+      git config --global user.email
+    ```
+
+  - 이메일 변경하기  
+    - git config --global user.email [변경할이메일]  
+
+    &darr; `\` &darr; `bash shell`
+    ```bash
+      git config --global user.email change@change.com
+    ```
+
+    ![alt text](images/markdown-image-2.png)  
+
+<br>  
+
+<br>  
+
+Windows 환경에서 Git 사용자 이름과 이메일 주소를 확인하는 방법은 명령 프롬프트(Command Prompt) 또는 Git Bash와 같은 터미널을 사용하는 것입니다. 이 정보는 Git의 전역(global) 설정 또는 특정 저장소(repository)의 로컬(local) 설정에 저장됩니다. 다음 단계에 따라 사용자 이름과 이메일을 확인할 수 있습니다.
+
+### 전역 사용자 이름과 이메일 확인하기
+
+1. **명령 프롬프트(Command Prompt) 또는 Git Bash 열기**: 검색을 통해 "cmd" 또는 "Git Bash"를 찾아 실행합니다.
+   
+2. **Git 전역 사용자 이름 확인**: 다음 명령어를 입력합니다.
+   ```sh
+   git config --global user.name
+   ```
+   이 명령은 전역 설정에 저장된 Git 사용자 이름을 출력합니다.
+
+3. **Git 전역 이메일 확인**: 다음 명령어를 입력합니다.
+   ```sh
+   git config --global user.email
+   ```
+   이 명령은 전역 설정에 저장된 Git 사용자 이메일을 출력합니다.
+
+### 특정 저장소의 사용자 이름과 이메일 확인하기
+
+Git은 특정 저장소에 대해 다른 사용자 이름과 이메일 주소를 설정할 수 있습니다. 이는 전역 설정보다 우선 적용됩니다. 특정 저장소의 사용자 이름과 이메일 주소를 확인하려면, 해당 저장소의 디렉토리로 이동한 후 다음 명령어를 실행합니다.
+
+1. **저장소 디렉토리로 이동**: `cd` 명령어를 사용해 해당 Git 저장소 디렉토리로 이동합니다.
+   
+2. **로컬 사용자 이름 확인**: 다음 명령어를 입력합니다.
+   ```sh
+   git config user.name
+   ```
+   이 명령은 현재 저장소에 설정된 사용자 이름을 출력합니다.
+
+3. **로컬 이메일 확인**: 다음 명령어를 입력합니다.
+   ```sh
+   git config user.email
+   ```
+   이 명령은 현재 저장소에 설정된 사용자 이메일을 출력합니다.
+
+### 설정 변경하기
+
+Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명령어에 `--global` 옵션을 사용하여 전역 설정을 변경하거나, 특정 저장소에서 이 옵션을 생략하여 로컬 설정을 변경할 수 있습니다. 예를 들어:
+
+- **전역 사용자 이름 변경**:
+  ```sh
+  git config --global user.name "새 사용자 이름"
+  ```
+- **전역 이메일 변경**:
+  ```sh
+  git config --global user.email "새 이메일 주소"
+  ```
+- **로컬 사용자 이름 변경** (특정 저장소에서):
+  ```sh
+  git config user.name "새 로컬 사용자 이름"
+  ```
+- **로컬 이메일 변경** (특정 저장소에서):
+  ```sh
+  git config user.email "새 로컬 이메일 주소"
+  ```
+
+이렇게 설정을 변경하면, 이후에 수행되는 커밋에서 변경된 사용자 정보가 사용됩니다.
+
+<br>  
+
+--- 
+
+<br>  
+
 ## up  
 - github 로 푸쉬 하기위한 파일.  
   - 사용방법  
