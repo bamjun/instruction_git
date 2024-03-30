@@ -1,6 +1,6 @@
 # 깃 & 깃허브  
 
-## $$\color{purple}\fbox{\Huge git \color{pink}{명령어}}$$  
+## $$\color{purple}\fbox{\Huge \color{pink}{git 명령어}}$$  
 - 현재 환경에 설정된 유저와 이메일 조회하기  
   - 유저 확인하기  
     &darr; `\` &darr; `bash shell`
