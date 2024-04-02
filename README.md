@@ -1,4 +1,4 @@
-# 깃 & 깃허브  
+# 깃 & 깃허브 [link](https://github.com/bamjun/instruction_git)  
 
 ## $$\color{purple}\fbox{\Huge \color{pink}{git 명령어}}$$  
 - 현재 환경에 설정된 유저와 이메일 조회하기  
