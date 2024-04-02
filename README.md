@@ -129,7 +129,7 @@ Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명
     . up test
     ```  
 
-    ![이미지](images/markdown-image-3.png)  
+    <img src="images/markdown-image-3.png">
 
     <br>
 
