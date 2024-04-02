@@ -104,6 +104,22 @@ Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명
 <br>  
 
 ## $$\color{purple}\fbox{\Huge \color{pink}{up}}$$  
+- `up` 파일만들기  
+
+  &darr; `\` &darr; `v`
+  ```bash
+  #!"C:\Program Files\Git\git-bash.exe"
+
+  if [ -z "$1" ]; then
+      echo "커밋 메시지를 입력하세요."
+  else
+      git add .
+      git commit -m "$1"
+      git push
+  fi
+  ```
+  <br>  
+
 - github 로 푸쉬 하기위한 파일.  
   - 사용방법  
     - 터미널에서 . up [커밋 메세지]
