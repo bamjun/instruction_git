@@ -1,5 +1,42 @@
 # 깃 & 깃허브 [link](https://github.com/bamjun/instruction_git)  
 
+## $$\color{purple}\fbox{\Huge \color{pink}{프로젝트 시작 예제}}$$  
+- github에서 레포지토리 만들기.  
+- github 레포지토리에서 레포지토리 url 복사.
+- 로컬환경에서 프로젝트 시작할 폴더 만들고 `git init` 하기
+  &darr; `\` &darr; `bash shell`
+  ```bash
+  git init
+  ```
+
+- 프로젝트 폴더의 전체 파일 `add`하기  
+  &darr; `\` &darr; `bash shell`
+  ```bash
+  git add .
+  ```
+
+- 커밋 만들기  
+  - git commit -m '[메세지]'
+    &darr; `\` &darr; `bash shell`
+    ```bash
+    git commit -m 'first'
+    ```
+
+- 깃허브 레포지토리 주소 추가하기  
+  - git remote add [주소별칭] [github주소]
+    &darr; `\` &darr; `bash shell`
+    ```bash
+    git remote add origin https://github.com/bamjun/instruction_git
+    ```
+
+- 깃허브에 업로드하기  
+  - git push -u [주소별칭] [브랜치이름]
+    &darr; `\` &darr; `bash shell`
+    ```bash  
+    git push -u origin main
+    ```
+  
+
 ## $$\color{purple}\fbox{\Huge \color{pink}{git 명령어}}$$  
 - 현재 환경에 설정된 유저와 이메일 조회하기  
   - 유저 확인하기  
