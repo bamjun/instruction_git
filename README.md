@@ -35,7 +35,12 @@
     ```bash  
     git push -u origin main
     ```
-  
+
+<br>  
+
+---  
+
+<br>
 
 ## $$\color{purple}\fbox{\Huge \color{pink}{git 명령어}}$$  
 - 현재 환경에 설정된 유저와 이메일 조회하기  
@@ -242,4 +247,25 @@ echo "모든 인자(@): $@"
 
 ---  
 
+<br>
 
+## $$\color{purple}\fbox{\Huge \color{pink}{bash shell 단축키}}$$  
+
+- ctrl + w
+  - 앞의 한단어 삭제  
+  
+- alt + d
+  - 뒷의 한단어 삭제
+
+- ctrl + l
+  - 화면 clear(스크롤 위로올리면 이전 라인 볼수있음.)
+
+- ctrl + u
+  - 입력한 라인 삭제
+
+
+<br>
+
+---  
+
+<br>
