@@ -32,6 +32,23 @@ else
 
 fi
 
+# b.sh 파일에 쓸 내용
+cat << 'EOF' > up
+#!"C:\Program Files\Git\git-bash.exe"
+
+if [ -z "$1" ]; then
+    echo "커밋 메시지를 입력하세요."
+else
+    git add .
+    git commit -m "$1"
+    git push
+fi
+EOF
+
+# b.sh에 실행 권한 부여
+chmod +x up
+
+echo "up 파일이 생성되었습니다."
 
 
 
