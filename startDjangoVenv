@@ -1,7 +1,6 @@
 #!"C:\Program Files\Git\git-bash.exe"
 
 
-
 if [ -z "$1" ]; then
     echo "장고 버전을 입력하세요."
 else
@@ -49,7 +48,3 @@ EOF
 chmod +x up
 
 echo "up 파일이 생성되었습니다."
-
-
-
-
