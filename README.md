@@ -145,6 +145,26 @@ Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명
 
 <br>  
 
+## $$\color{purple}\fbox{\Huge \color{pink}{startDjangoVenv}}$$  
+- python venv 를 활용해서 장고 프로젝트를 빠르게 실행하기 위한 쉘스크립트  
+  - gitignore 사이트에서 장고내용 복붙해서 .gitignore 생성
+  - venv 생성 후 가상환경 자동 진입
+  - 입력한 버전의 장고 설치
+  - 빠른 가상환경 진입을 위한 v 스크립트 생성
+
+- 쉘스크립트 시작시 장고 버전을 입력해야함..  
+  - . startDjangoVenv [버전]
+  &darr; `\` &darr; `bash shell`
+  ```bash
+  . startDjangoVenv 5.0.*
+  ```    
+
+<br>  
+
+--- 
+
+<br>  
+
 ## $$\color{purple}\fbox{\Huge \color{pink}{up}}$$  
 - `up` 파일만들기  
 

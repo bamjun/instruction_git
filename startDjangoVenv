@@ -1,0 +1,38 @@
+#!"C:\Program Files\Git\git-bash.exe"
+
+
+
+if [ -z "$1" ]; then
+    echo "장고 버전을 입력하세요."
+else
+    python -m venv .venv
+
+    echo ". .venv/Scripts/activate" > v
+
+    # Django 프로젝트를 위한 .gitignore 파일 생성
+    curl https://www.toptal.com/developers/gitignore/api/django -o .gitignore
+
+    echo -n 'v' >> .gitignore
+
+    echo "Django=="$1 > requirements.txt
+
+    . v
+
+    # VIRTUAL_ENV 환경 변수가 설정되어 있는지 확인
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        echo "현재 가상 환경에 진입했습니다: $VIRTUAL_ENV"
+
+        python -m pip install --upgrade pip
+
+        pip install -r requirements.txt
+
+    else
+        echo "현재 가상 환경에 진입하지 않았습니다."
+    fi
+
+fi
+
+
+
+
+
