@@ -154,7 +154,7 @@ Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명
   - 깃허브에 빠른 푸쉬를 위한 up 스크립트 생성
 
 - 쉘스크립트 시작시 장고 버전을 입력해야함..  
-  - . startDjangoVenv [버전]
+  - . startDjangoVenv [버전]  
   &darr; `\` &darr; `bash shell`
   ```bash
   . startDjangoVenv 5.0.*
