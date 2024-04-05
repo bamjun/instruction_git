@@ -31,7 +31,7 @@ else
 
 fi
 
-# b.sh 파일에 쓸 내용
+# up 배쉬스크립트 파일에 쓸 내용
 cat << 'EOF' > up
 #!"C:\Program Files\Git\git-bash.exe"
 
@@ -48,3 +48,17 @@ EOF
 chmod +x up
 
 echo "up 파일이 생성되었습니다."
+
+
+# HOLDER 파일에 쓸 내용 - 여러군데에서 작업구분하기 위한 파일
+cat << 'EOF' > HOLDER
+DESKTOP-khy51
+  -
+LAPTOP-purfeetcat
+  -
+EOF
+
+# HOLDER에 실행 권한 부여
+chmod +x HOLDER
+
+echo "HOLDER 파일이 생성되었습니다."
