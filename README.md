@@ -155,10 +155,10 @@ Git 사용자 이름이나 이메일 주소를 변경하려면, `git config` 명
 
 - 쉘스크립트 시작시 장고 버전을 입력해야함..  
   - . startDjangoVenv [버전]  
-  &darr; `\` &darr; `bash shell`
-  ```bash
-  . startDjangoVenv 5.0.*
-  ```    
+    &darr; `\` &darr; `bash shell`
+    ```bash
+    . startDjangoVenv 5.0.*
+    ```    
 
 <br>  
 
