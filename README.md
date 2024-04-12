@@ -290,3 +290,45 @@ echo "모든 인자(@): $@"
 ---  
 
 <br>
+
+## $$\color{purple}\fbox{\Huge \color{pink}{bash shell 색상표현}}$$  
+
+![alt text](images/markdown-image-3.png)
+
+- 배쉬쉘에서 글자색과 배경색을 선택해서 글자색을 쉘에서 표현가능. [위키](https://en.wikipedia.org/wiki/ANSI_escape_code)  
+  - 글자색 지정하기  
+    - "\033[38;5;[ 0~255 글자색지정하기 ]m"
+    - 색상표에서 0 부터 255 의 숫자로 색상지정가능.
+    - 글자색 변경후, COLOR_RESET 해야함. 안하면 계속 글자색 변경됨.  
+    
+    &darr; `/` &darr; `bash`
+    ```bash
+    COLOR_RESET="\033[0m"
+    echo -e "\033[38;5;9m test color ${COLOR_RESET}"
+    ```  
+
+
+- 배경색 지정하기  
+  - "\033[48;5;[ 0~255 배경색지정하기 ]m"  
+
+    &darr; `/` &darr; `bash`
+    ```bash
+    COLOR_RESET="\033[0m"
+    echo -e "\033[48;5;9m test color ${COLOR_RESET}"
+    
+    ```  
+
+- 글자색 배경색 동시에 적용가능  
+  - "\033[38;5;[ 0~255 글자색지정하기 ]m\033[48;5;[ 0~255 배경색지정하기 ]m"
+
+    &darr; `/` &darr; `bash`
+    ```bash
+    COLOR_RESET="\033[0m"
+    echo -e "\033[38;5;9m\033[48;5;7m test color ${COLOR_RESET}"
+    ```  
+
+<br>
+
+---  
+
+<br>
