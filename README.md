@@ -393,3 +393,17 @@ echo "모든 인자(@): $@"
 <br>
 
 ---
+
+# 깃 스테이지 전 파일 삭제  
+
+- `A` 브렌치에서 파일을 수정 후 `B` 브런치로 이동 하려고하면 에러를 발생함.
+  - git add 후 git commit 을 하거나, git stach 해서, 수정 전 상태로 돌려놔야 이동 가능.
+
+git stash list
+Here is the following command use it to clear all of your stashed changes:
+
+git stash clear
+Now if you want to delete one of the stashed changes from stash area:
+
+git stash drop stash@{index} # Index will be shown after getting stash list
+
