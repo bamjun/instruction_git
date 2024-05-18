@@ -407,3 +407,83 @@ Now if you want to delete one of the stashed changes from stash area:
 
 git stash drop stash@{index} # Index will be shown after getting stash list
 
+
+
+
+---
+
+# 윈도우에서 배쉬쉘 alias 수정경로  
+`C:\Program Files\Git\etc\profile.d\aliases.sh`
+
+# 로그인쉘 비로그인쉘 확인하는 명령어
+```bash
+shopt -q login_shell && echo "Login Shell" || echo "Non-login Shell"
+```
+
+---  
+
+`shopt`는 Bash 셸에서 사용되는 명령어로, 셸 옵션을 설정하거나 해제하는 데 사용됩니다. `shopt`는 "shell options"의 약자입니다. `shopt`를 사용하면 Bash 셸의 다양한 특성을 제어할 수 있습니다.
+
+### 주요 기능
+
+1. **옵션 목록 보기**:
+   `shopt` 명령어를 아무런 인자 없이 사용하면 현재 셸에 설정된 모든 옵션과 그 상태(켜짐/꺼짐)를 보여줍니다.
+
+   ```bash
+   shopt
+   ```
+
+2. **특정 옵션의 상태 확인**:
+   `-q` 옵션을 사용하여 특정 옵션의 상태를 조용히(출력 없이) 확인할 수 있습니다. 이 명령은 성공 여부를 반환하므로 조건문에서 유용하게 사용할 수 있습니다.
+
+   ```bash
+   shopt -q login_shell && echo "This is a login shell" || echo "This is not a login shell"
+   ```
+
+3. **옵션 설정 (켜기)**:
+   `-s` 옵션을 사용하여 특정 셸 옵션을 켤 수 있습니다.
+
+   ```bash
+   shopt -s 옵션명
+   ```
+
+4. **옵션 해제 (끄기)**:
+   `-u` 옵션을 사용하여 특정 셸 옵션을 끌 수 있습니다.
+
+   ```bash
+   shopt -u 옵션명
+   ```
+
+### 예시
+
+1. **현재 설정된 모든 옵션 보기**:
+   ```bash
+   shopt
+   ```
+
+2. **특정 옵션 (예: `nocaseglob`) 켜기**:
+   ```bash
+   shopt -s nocaseglob
+   ```
+
+3. **특정 옵션 (예: `nocaseglob`) 끄기**:
+   ```bash
+   shopt -u nocaseglob
+   ```
+
+4. **특정 옵션 (예: `login_shell`)의 상태 확인**:
+   ```bash
+   shopt -q login_shell && echo "Login Shell" || echo "Non-login Shell"
+   ```
+
+### 유용한 옵션들
+
+- `dotglob`: `*`와 같은 패턴이 숨김 파일(점으로 시작하는 파일)을 포함하도록 설정.
+- `expand_aliases`: 셸 스크립트에서 별칭(alias)을 확장하도록 설정.
+- `extglob`: 확장된 패턴 매칭(예: `@(pattern|pattern)`)을 허용.
+- `nocaseglob`: 패턴 매칭 시 대소문자를 구분하지 않도록 설정.
+- `nullglob`: 패턴이 일치하는 파일이 없을 때 빈 문자열로 확장.
+
+### 결론
+
+`shopt` 명령어는 Bash 셸의 다양한 옵션을 제어하여 셸의 동작을 원하는 대로 설정할 수 있게 해주는 유용한 도구입니다. 로그인 셸인지 비로그인 셸인지 확인하는 것 외에도, 여러 유용한 옵션들을 설정하여 셸 환경을 커스터마이징할 수 있습니다.
